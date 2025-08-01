@@ -1,0 +1,85 @@
+.add {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-img-upload label {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.add-img-upload img {
+  width: 100%;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+.add-img-upload img:hover {
+  border-color: pink;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: pink;
+  box-shadow: 0 0 3px pink;
+}
+
+.add-category-price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+  min-width: 200px;
+}
+
+.add-btn {
+  background-color: #4c81af;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: pink;
+}

@@ -1,0 +1,43 @@
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.place-order-left input:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 5px #ff69b4;
+    background-color: #fff;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 15px;
+}
+    

@@ -1,0 +1,102 @@
+.order.add {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order h3 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Layout danh sách đơn hàng: dọc */
+.order-list {
+  display: flex;
+  flex-direction: column; /* 👉 Chuyển thành layout dọc */
+  gap: 20px;
+}
+
+/* Mỗi đơn hàng */
+.order-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: 1px solid #ffd6e7;
+  background-color: #fff0f6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 182, 193, 0.3);
+}
+
+/* Hình parcel */
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Nội dung đơn hàng */
+.order-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+/* Tên món ăn */
+.order-item-food {
+  font-weight: bold;
+  color: #c2185b;
+}
+
+/* Tên người nhận */
+.order-item-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Địa chỉ */
+.order-item-address {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Tổng tiền và số lượng */
+.order-item p {
+  margin: 0;
+}
+
+/* Dropdown trạng thái */
+.order-item select {
+  padding: 8px 12px;
+  border: 1px solid #f8a6c3;
+  border-radius: 8px;
+  background-color: #ffe6f0;
+  color: #c2185b;
+  font-weight: 500;
+  font-size: 14px;
+  width: fit-content;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.order-item select:focus {
+  outline: none;
+  border-color: #e67e8c;
+}
+
+/* Scrollbar không cần thiết vì chuyển qua layout dọc */
+.order-list::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,60 @@
+.list {
+  width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.list > p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.list-table-format.title {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  font-size: 17px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+}
+
+.list-table-format p,
+.list-table-format b {
+  text-align: center;
+  margin: 0;
+}
+
+.list-table-format:last-child {
+  border-bottom: none;
+}
+
+.list-table-format p:hover {
+  color: #007bff;
+  cursor: default;
+}
