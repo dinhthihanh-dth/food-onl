@@ -15,3 +15,5 @@ export const assets ={
 }
 
 export const url = 'https://food-onl-backend.onrender.com'
+export const currency = "VND"
+
